@@ -1,0 +1,10 @@
+p.news-text {
+    color: white;
+    text-align: justify;
+}
+
+div.news-text-div{
+    /* outline: 2px solid red; */
+    padding: 0px 20px 0px 20px;
+    font-size: 1.1rem;
+}

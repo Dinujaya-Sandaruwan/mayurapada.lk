@@ -12,3 +12,4 @@
 <!-- Pages CSS -->
 
 <link rel="stylesheet" href="styles/pages/all-news.css">
+<link rel="stylesheet" href="styles/pages/one-news.css">

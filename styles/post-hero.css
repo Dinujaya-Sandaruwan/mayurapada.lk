@@ -43,37 +43,31 @@ div.post-hero{
 
 @media screen and (max-width: 1172px){
     h1.post-hero-title{
-        font-size: 3rem;
+        font-size: 4rem;
     }
 }
 
 @media screen and (max-width: 976px){
     h1.post-hero-title{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 783px){
+    h1.post-hero-title{
         font-size: 2rem;
-    }
-}
-
-@media screen and (max-width: 783px){
-    h1.post-hero-title{
-        font-size: 1rem;
-    }
-}
-
-@media screen and (max-width: 783px){
-    h1.post-hero-title{
-        font-size: 0.5rem;
     }
 }
 
 @media screen and (max-width: 488px){
     h1.post-hero-title{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
 @media screen and (max-width: 392px){
     h1.post-hero-title{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
 

@@ -1,5 +1,7 @@
 body{
-    background-color: var(--main-dark-color);
+    /* background-color: var(--main-dark-color); */
+    background-color: #212529;
+    /* background-color: green; */
 }
 
 /* Face up Inimation */
