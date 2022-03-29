@@ -1,0 +1,84 @@
+h1.post-hero-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+    color: #fff;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 6rem;
+    text-align: center;
+
+    /* outline: 2px solid red; */
+
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        top: 55%;
+
+    }
+    100% {
+        opacity: 1;
+        top: 50%;
+     }
+}
+
+div.post-hero{
+    position: relative;
+    
+}
+
+@media screen and (max-width: 1565px){
+    h1.post-hero-title{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 1172px){
+    h1.post-hero-title{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 976px){
+    h1.post-hero-title{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 783px){
+    h1.post-hero-title{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 783px){
+    h1.post-hero-title{
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 488px){
+    h1.post-hero-title{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 392px){
+    h1.post-hero-title{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 299px){
+    h1.post-hero-title{
+        font-size: 1rem;
+    }
+}
