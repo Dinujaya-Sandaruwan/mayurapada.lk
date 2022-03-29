@@ -1,0 +1,30 @@
+div.news-main{
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div.card{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 20px 20px 20px;
+    width: 18rem;
+    min-width: 18rem;
+    text-align: center;
+}
+
+div.card-body{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+@media screen and (max-width: 1098px){
+    div.news-maib{
+        width: 90%;
+    }
+}

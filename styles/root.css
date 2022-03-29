@@ -1,0 +1,27 @@
+body{
+    background-color: var(--main-dark-color);
+}
+
+/* Face up Inimation */
+
+.fade-up {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        top: 55%;
+
+    }
+    100% {
+        opacity: 1;
+        top: 50%;
+     }
+}
+
+/* Media Quary Demo */
+@media screen and (max-width: 1172px){
+
+}
