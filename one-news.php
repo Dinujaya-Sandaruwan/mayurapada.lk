@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="styles/image-effect/fluid-gallery.css">
     <!-- My CSS -->
     <?php include 'styles/!main.style.php'; ?>
 
@@ -88,29 +93,55 @@
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
     
     
-    <div class="post-hero">
+    <div class="page-hero">
       <img src="img/hero.jpg" class="img-fluid hero" alt="...">
-      <h1 class="post-hero-title">
-          විදුහල්පති තුමියගේ නික්මයාම
+      <h1 class="page-hero-title">
+          Mayura News
       </h1>
     </div>
 
-
 <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-            Hero Image / Title
+            Image Gallery
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 
-    <div class="news-main">
+          <div class="tz-gallery">
 
+          <div class="row">
 
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="img/news/1.jpg">
+                      <img src="img/news/1.jpg" alt="Bridge">
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="img/news/2.jpg">
+                      <img src="img/news/2.jpg" alt="Park">
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="img/news/3.jpg">
+                      <img src="img/news/3.jpg" alt="Tunnel">
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="img/news/4.jpg">
+                      <img src="img/news/4.jpg" alt="Traffic">
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="img/news/5.jpg">
+                      <img src="img/news/5.jpg" alt="Coast">
+                  </a>
+              </div> 
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="img/news/6.jpg">
+                      <img src="img/news/6.jpg" alt="Rails">
+                  </a>
+              </div>
 
-    <div class="news-text-div">
-        <p class="news-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, deserunt. Unde itaque quo illum ducimus porro dignissimos id facere totam nesciunt et temporibus, repellendus ipsa dolores voluptatum blanditiis voluptatibus sapiente nemo expedita perferendis. Similique, id. Provident accusamus voluptatem accusantium? Veritatis repellat sequi aliquid molestiae deleniti blanditiis nostrum laborum rem voluptates.</p>
-      </div>
+          </div>
 
-
-    </div>
-
+          </div>
 
 <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
             Footer
@@ -135,9 +166,12 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+    baguetteBox.run('.tz-gallery');
+    </script>
 
 
-    
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
