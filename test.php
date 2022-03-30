@@ -16,6 +16,47 @@
     <!-- My CSS -->
     <?php include 'styles/!main.style.php'; ?>
 
+    <style>
+        header {
+            /* max-width: 1500px; */
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+            /* border: 3px solid white; */
+            margin-top: 50px;
+            }
+
+            .row {
+            display: flex;
+            overflow: hidden;
+            }
+
+            .imagegroup {
+            display: flex;
+            width: 100%;
+            }
+
+            .imagegroup img{
+            flex-shrink: 0;
+            object-fit: cover;
+            margin: 3px;
+            }
+
+            .imagegroup {
+            animation: travel 20s ease-in-out infinite;
+            }
+
+            @keyframes travel {
+            0%, 100% {
+                transform: translate3d(0,0,0);
+                }
+            50% {
+                transform: translate3d(-100%,0,0);
+                }
+            }
+    </style>
+
     <title>Mayurapada CC - Mayurapada Central College Official Website </title>
   </head>
   <body>
@@ -99,6 +140,34 @@
           විදුහල්පති තුමියගේ නික්මයාම
       </h1>
     </div>
+
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+            Main Images
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+<header>
+  
+  <div class="row small">
+    <div class="imagegroup" style="animation-delay: 1s;">
+       <img src="img/news/1.jpg" alt="" width = '20%'>
+       <img src="img/news/2.jpg" alt="" width = '20%'>
+       <img src="img/news/3.jpg" alt="" width = '20%'>
+       <img src="img/news/4.jpg" alt="" width = '20%'>
+       <img src="img/news/5.jpg" alt="" width = '20%'>
+       <img src="img/news/6.jpg" alt="" width = '20%'>
+       <img src="img/news/7.jpg" alt="" width = '20%'>
+       <img src="img/news/8.jpg" alt="" width = '20%'>
+       <img src="img/news/9.jpg" alt="" width = '20%'>
+       <img src="img/news/10.jpg" alt="" width = '20%'>
+    </div>
+  </div>
+
+
+</header>
+
+
+
+
 
 <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
             News Tagline
