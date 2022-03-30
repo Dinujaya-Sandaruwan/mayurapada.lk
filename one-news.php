@@ -100,6 +100,34 @@
       </h1>
     </div>
 
+
+    <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+            Main Images
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+<header class="one-news">
+  
+  <div class="row small">
+    <div class="imagegroup" style="animation-delay: 1s;">
+       <img src="img/news/1.jpg" alt="" width = '20%'>
+       <img src="img/news/2.jpg" alt="" width = '20%'>
+       <img src="img/news/3.jpg" alt="" width = '20%'>
+       <img src="img/news/4.jpg" alt="" width = '20%'>
+       <img src="img/news/5.jpg" alt="" width = '20%'>
+       <img src="img/news/6.jpg" alt="" width = '20%'>
+       <img src="img/news/7.jpg" alt="" width = '20%'>
+       <img src="img/news/8.jpg" alt="" width = '20%'>
+       <img src="img/news/9.jpg" alt="" width = '20%'>
+       <img src="img/news/10.jpg" alt="" width = '20%'>
+    </div>
+  </div>
+
+
+</header>
+    
+
+
+
 <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
             News Tagline
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
@@ -114,60 +142,95 @@
             Image Gallery
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 
-          <div class="tz-gallery">
+  <div class="tz-gallery">
 
-          <div class="row">
+    <div class="row">
 
-              <div class="col-sm-6 col-md-4">
-                  <a class="lightbox" href="img/news/1.jpg">
-                      <img src="img/news/1.jpg" alt="Bridge">
-                  </a>
-              </div>
-              <div class="col-sm-6 col-md-4">
-                  <a class="lightbox" href="img/news/2.jpg">
-                      <img src="img/news/2.jpg" alt="Park">
-                  </a>
-              </div>
-              <div class="col-sm-6 col-md-4">
-                  <a class="lightbox" href="img/news/3.jpg">
-                      <img src="img/news/3.jpg" alt="Tunnel">
-                  </a>
-              </div>
-              <div class="col-sm-6 col-md-4">
-                  <a class="lightbox" href="img/news/4.jpg">
-                      <img src="img/news/4.jpg" alt="Traffic">
-                  </a>
-              </div>
-              <div class="col-sm-6 col-md-4">
-                  <a class="lightbox" href="img/news/5.jpg">
-                      <img src="img/news/5.jpg" alt="Coast">
-                  </a>
-              </div> 
-              <div class="col-sm-6 col-md-4">
-                  <a class="lightbox" href="img/news/6.jpg">
-                      <img src="img/news/6.jpg" alt="Rails">
-                  </a>
-              </div>
+      <div class="col-sm-8 col-md-3">
+          <a class="lightbox" href="img/news/1.jpg">
+              <img src="img/news/1.jpg" alt="Bridge">
+          </a>
+      </div>
+      <div class="col-sm-8 col-md-3">
+          <a class="lightbox" href="img/news/2.jpg">
+              <img src="img/news/2.jpg" alt="Park">
+          </a>
+      </div>
+      <div class="col-sm-8 col-md-3">
+          <a class="lightbox" href="img/news/3.jpg">
+              <img src="img/news/3.jpg" alt="Tunnel">
+          </a>
+      </div>
+      <div class="col-sm-8 col-md-3">
+          <a class="lightbox" href="img/news/4.jpg">
+              <img src="img/news/4.jpg" alt="Traffic">
+          </a>
+      </div>
+      <div class="col-sm-8 col-md-3">
+          <a class="lightbox" href="img/news/5.jpg">
+              <img src="img/news/5.jpg" alt="Coast">
+          </a>
+      </div> 
+      <div class="col-sm-8 col-md-3">
+          <a class="lightbox" href="img/news/6.jpg">
+              <img src="img/news/6.jpg" alt="Rails">
+          </a>
+      </div>
+      <div class="col-sm-8 col-md-3">
+          <a class="lightbox" href="img/news/7.jpg">
+              <img src="img/news/7.jpg" alt="Rails">
+          </a>
+      </div>
+      <div class="col-sm-8 col-md-3">
+          <a class="lightbox" href="img/news/8.jpg">
+              <img src="img/news/8.jpg" alt="Rails">
+          </a>
+      </div>
 
 
-          </div>
+    </div>
 
-          </div>
+  </div>
+
+
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+            Comments
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+
+  <div class="news-comments">
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label comments-label">Name</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label comments-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label for="Comment" class="comments-label">Comment</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary comments-submit">Submit</button>
+    </form>
+  </div>
+
 
 <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
             Footer
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 
-<!-- Footer -->
-<footer class="bg-dark">
-    <!-- Copyrights -->
-    <div class="my-footer py-4">
-      <div class="container text-center">
-        <p class=" mb-0 py-2">© 2022 Mayurapada CC All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="bg-dark">
+      <!-- Copyrights -->
+      <div class="my-footer py-4">
+        <div class="container text-center">
+          <p class=" mb-0 py-2">© 2022 Mayurapada CC All rights reserved.</p>
+        </div>
       </div>
-    </div>
-  </footer>
-  <!-- End -->
+    </footer>
+    <!-- End -->
 
 
     

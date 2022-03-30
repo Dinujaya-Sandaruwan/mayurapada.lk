@@ -17,7 +17,7 @@
     <?php include 'styles/!main.style.php'; ?>
 
     <style>
-        header {
+        header.one-news {
             /* max-width: 1500px; */
             width: 100%;
             margin-left: auto;
@@ -145,7 +145,7 @@
             Main Images
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 
-<header>
+<header class="one-news">
   
   <div class="row small">
     <div class="imagegroup" style="animation-delay: 1s;">

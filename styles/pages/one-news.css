@@ -1,6 +1,6 @@
 p.news-text {
     color: white;
-    text-align: justify;
+    text-align: center;
 }
 
 div.news-text{
@@ -89,7 +89,6 @@ div.news-text{
     background-color: transparent !important;
 }
 
-/* Media Quary Demo  */
 @media screen and (max-width: 1072px){
     div.news-text{
         /* outline: 2px solid red; */
@@ -120,7 +119,7 @@ div.news-text{
                                 Top Auto Image Slider CSS
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-header{
+header.one-news {
     /* max-width: 1500px; */
     width: 100%;
     margin-left: auto;
@@ -150,11 +149,56 @@ header{
     animation: travel 20s ease-in-out infinite;
     }
 
-    @keyframes travel {
-    0%, 100% {
-        transform: translate3d(0,0,0);
-        }
-    50% {
-        transform: translate3d(-100%,0,0);
-        }
+@keyframes travel {
+0%, 100% {
+    transform: translate3d(0,0,0);
     }
+50% {
+    transform: translate3d(-100%,0,0);
+    }
+}
+
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                                Comments
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+div.news-comments {
+    width: 60%;
+    /* outline: 2px solid red; */
+    margin: auto;
+    margin-bottom: 100px;
+    border: 3px solid white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button.comments-submit{
+    width: 100%;
+}
+
+label.comments-label{
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1072px){
+    div.news-comments {
+        width: 70%;
+ 
+    }
+}
+
+@media screen and (max-width: 975px){
+    div.news-comments {
+        width: 80%;
+
+    }
+}
+
+@media screen and (max-width: 491px){
+    div.news-comments {
+        width: 90%;
+
+    }
+}

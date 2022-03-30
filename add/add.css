@@ -1,0 +1,65 @@
+body{
+    background-color: #212529;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                Imdex
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+
+div.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+div.add-btn{
+    margin: 0px 40px 0px 40px;
+    /* outline: 2px solid red; */
+}
+
+button.btn{
+    padding: 20px;
+}
+
+h1.welcome{
+    /* outline: 2px solid red; */
+    display: block;
+    margin-bottom: 50px;
+    color: white;
+}
+
+div.main-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.main-border{
+    border: 3px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 100px 10px rgba(1, 1, 1, 1);
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                Add News
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+div.add-form{
+    /* outline: 2px solid red; */
+    padding: 20px;
+    width: 50%;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+button.news-submit{
+    width: 100%;
+}
+
+label.form-label{
+    color: white;
+}
