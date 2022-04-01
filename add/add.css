@@ -3,7 +3,7 @@ body{
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-                Imdex
+                Index
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 
@@ -13,6 +13,7 @@ div.main{
     align-items: center;
     flex-direction: column;
     height: 100vh;
+
 }
 
 div.add-btn{
@@ -62,4 +63,19 @@ button.news-submit{
 
 label.form-label{
     color: white;
+}
+
+input.main-images{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+div.add-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: 100vh; */
+    margin-top: 100px;
+    margin-bottom: 100px;
 }

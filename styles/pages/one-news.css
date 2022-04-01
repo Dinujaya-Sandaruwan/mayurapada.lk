@@ -167,7 +167,7 @@ div.news-comments {
     width: 60%;
     /* outline: 2px solid red; */
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     border: 3px solid white;
     padding: 20px;
     border-radius: 10px;
@@ -201,4 +201,65 @@ label.comments-label{
         width: 90%;
 
     }
+}
+
+div.one-comment{
+    display: flex;
+    color: white;
+
+}
+
+div.user-avater-div{
+    width: 10%;
+    /* outline: 1px solid red; */
+}
+
+div.user-comment-div{
+    width: 90%;
+    margin-top: 10px;
+    /* outline: 1px solid green; */
+}
+
+img.comment-user-avater{
+    border-radius: 50%;
+    width: 90%;
+    border: 2px solid white;
+}
+
+h1.comment-user-name{
+    font-size: 1.5rem;
+}
+h1.user-comment{
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 680px){
+    div.user-avater-div{
+        width: 15%;
+        /* outline: 1px solid red; */
+    }
+    
+    div.user-comment-div{
+        width: 80%;
+        /* outline: 1px solid green; */
+    }
+}
+
+@media screen and (max-width: 491px){
+    h1.comment-user-name{
+        font-size: 1.2rem;
+    }
+    h1.user-comment{
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
+}
+
+h1.admin-user{
+    color: rgb(0, 182, 0);
+}
+
+div.one-comment{
+    margin-bottom: 15px;
 }

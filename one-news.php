@@ -1,3 +1,15 @@
+
+<?php include 'dbcon.php'; 
+        if (isset($_GET["news_id"])){
+          $news_id = $_GET["news_id"];
+          $sql = "SELECT * FROM `news` WHERE news_id = $news_id;";
+        }
+        else {
+          $sql = "SELECT * FROM news ORDER BY news_id DESC LIMIT 1";
+        }
+        
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -24,68 +36,7 @@
             Nav bar
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 
-    <nav class="my-nav navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Mayurapada CC</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Mayura Life
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Administration
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Recent
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                About US
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item active">
-            <a class="nav-link" href="#">Contact US <span class="sr-only">(current)</span></a>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
-        </form>
-        </div>
-    </nav>
+        <?php include 'acc/header.php'; ?>
 
    
 <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -96,32 +47,52 @@
     <div class="post-hero">
       <img src="img/hero.jpg" class="img-fluid hero" alt="...">
       <h1 class="post-hero-title">
-          විදුහල්පති තුමියගේ නික්මයාම
+        <?php
+            $result = $conn->query($sql);
+            if ($result->num_rows > 0) {
+              // output data of each row
+              while($row = $result->fetch_assoc()) {
+                echo $row["news_title"];
+              }
+            } else {
+              echo "0 results";
+            }
+          ?>
       </h1>
     </div>
 
 
-    <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
             Main Images
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 
 <header class="one-news">
-  
-  <div class="row small">
+
+<div class="row small">
     <div class="imagegroup" style="animation-delay: 1s;">
-       <img src="img/news/1.jpg" alt="" width = '20%'>
-       <img src="img/news/2.jpg" alt="" width = '20%'>
-       <img src="img/news/3.jpg" alt="" width = '20%'>
-       <img src="img/news/4.jpg" alt="" width = '20%'>
-       <img src="img/news/5.jpg" alt="" width = '20%'>
-       <img src="img/news/6.jpg" alt="" width = '20%'>
-       <img src="img/news/7.jpg" alt="" width = '20%'>
-       <img src="img/news/8.jpg" alt="" width = '20%'>
-       <img src="img/news/9.jpg" alt="" width = '20%'>
-       <img src="img/news/10.jpg" alt="" width = '20%'>
+      <?php
+      $result = $conn->query($sql);
+       if ($result->num_rows > 0) {
+          // output data of each row
+          while($row = $result->fetch_assoc()) {
+            echo'     <img src="add/' . $row["main_image_1"] . ' " alt="" width = "20%">';
+            echo'     <img src="add/' . $row["main_image_2"] . ' " alt="" width = "20%">';
+            echo'     <img src="add/' . $row["main_image_3"] . ' " alt="" width = "20%">';
+            echo'     <img src="add/' . $row["main_image_4"] . ' " alt="" width = "20%">';
+            echo'     <img src="add/' . $row["main_image_5"] . ' " alt="" width = "20%">';
+            echo'     <img src="add/' . $row["main_image_6"] . ' " alt="" width = "20%">';
+            echo'     <img src="add/' . $row["main_image_7"] . ' " alt="" width = "20%">';
+            echo'     <img src="add/' . $row["main_image_8"] . ' " alt="" width = "20%">';
+            echo'     <img src="add/' . $row["main_image_9"] . ' " alt="" width = "20%">';
+            echo'     <img src="add/' . $row["main_image_10"] . ' " alt="" width = "20%">';
+          }
+        } else {
+          echo "0 results";
+        }
+
+      ?>
     </div>
   </div>
-
 
 </header>
     
@@ -134,7 +105,17 @@
 
     <div class="news-text">
       <p class="news-text">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo minus quam distinctio. Aut est omnis itaque, laboriosam numquam voluptate iste cupiditate hic, rem, amet nobis nam voluptatibus! Asperiores eaque aliquid quod. Facilis et quasi, qui rerum harum explicabo, deleniti magni iste, animi quia ea quis aperiam sit dolor vel id.
+        <?php
+          $result = $conn->query($sql);
+          if ($result->num_rows > 0) {
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+              echo $row["news_tag"];
+            }
+          } else {
+            echo "0 results";
+          }
+        ?>
       </p>
     </div>
 
@@ -145,49 +126,23 @@
   <div class="tz-gallery">
 
     <div class="row">
-
-      <div class="col-sm-8 col-md-3">
-          <a class="lightbox" href="img/news/1.jpg">
-              <img src="img/news/1.jpg" alt="Bridge">
-          </a>
-      </div>
-      <div class="col-sm-8 col-md-3">
-          <a class="lightbox" href="img/news/2.jpg">
-              <img src="img/news/2.jpg" alt="Park">
-          </a>
-      </div>
-      <div class="col-sm-8 col-md-3">
-          <a class="lightbox" href="img/news/3.jpg">
-              <img src="img/news/3.jpg" alt="Tunnel">
-          </a>
-      </div>
-      <div class="col-sm-8 col-md-3">
-          <a class="lightbox" href="img/news/4.jpg">
-              <img src="img/news/4.jpg" alt="Traffic">
-          </a>
-      </div>
-      <div class="col-sm-8 col-md-3">
-          <a class="lightbox" href="img/news/5.jpg">
-              <img src="img/news/5.jpg" alt="Coast">
-          </a>
-      </div> 
-      <div class="col-sm-8 col-md-3">
-          <a class="lightbox" href="img/news/6.jpg">
-              <img src="img/news/6.jpg" alt="Rails">
-          </a>
-      </div>
-      <div class="col-sm-8 col-md-3">
-          <a class="lightbox" href="img/news/7.jpg">
-              <img src="img/news/7.jpg" alt="Rails">
-          </a>
-      </div>
-      <div class="col-sm-8 col-md-3">
-          <a class="lightbox" href="img/news/8.jpg">
-              <img src="img/news/8.jpg" alt="Rails">
-          </a>
-      </div>
-
-
+      <?php
+        $get_images = "SELECT * FROM `images` WHERE news_id = $news_id";
+        // echo"$news_id";
+        $images = $conn->query($get_images);
+        if ($images->num_rows > 0) {
+          // output data of each row
+          while($row = $images->fetch_assoc()) {
+            echo '<div class="col-sm-8 col-md-3">';
+            echo '    <a class="lightbox" href="add/' . $row["image_url"] . '">';
+            echo '        <img src="add/' . $row["image_url"] . '" alt="Bridge">';
+            echo '    </a>';
+            echo '</div>';
+          }
+        } else {
+          echo "0 results";
+        }      
+      ?>
     </div>
 
   </div>
@@ -199,21 +154,58 @@
 
 
   <div class="news-comments">
-    <form>
+    <form action= "comment-data.php" method="post">
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label comments-label">Name</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name">
       </div>
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label comments-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
       </div>
       <div class="mb-3">
         <label for="Comment" class="comments-label">Comment</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="comment"></textarea>
       </div>
+      <?php echo'<input type="hidden" value="'. $news_id .'" name="form_id">' ?>
       <button type="submit" class="btn btn-primary comments-submit">Submit</button>
     </form>
+  </div>
+
+  <div class="news-comments show-comments">
+    <div class="one-comment">
+         <div class="user-avater-div">
+           <img src="img/me.jpg" alt="" class="comment-user-avater">
+         </div>
+         <div class="user-comment-div">
+           <h1 class="comment-user-name admin-user">Dinujaya Sandaruwan</h1>
+           <h1 class="user-comment">This is a very valuable work. I wish you continued success in this endeavor</h1>
+         </div>
+    </div>
+
+    
+    <?php
+        $get_comments = "SELECT * FROM comments WHERE news_id = $news_id";
+        // echo"$news_id";
+        $comments = $conn->query($get_comments);
+        if ($comments->num_rows > 0) {
+          // output data of each row
+          while($row = $comments->fetch_assoc()) {
+            echo'<div class="one-comment">';
+            echo'      <div class="user-avater-div">';
+            echo'        <img src="img/user_avetar.png" alt="" class="comment-user-avater">';
+            echo'      </div>';
+            echo'      <div class="user-comment-div">';
+            echo'        <h1 class="comment-user-name ">'. $row['user_name'] .'</h1>';
+            echo'        <h1 class="user-comment">'. $row['comment'] .'</h1>';
+            echo'      </div>';
+            echo'</div>';
+          }
+        } else {
+          // echo "0 results";
+        }      
+    ?>
+
   </div>
 
 
@@ -221,16 +213,7 @@
             Footer
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 
-  <!-- Footer -->
-  <footer class="bg-dark">
-      <!-- Copyrights -->
-      <div class="my-footer py-4">
-        <div class="container text-center">
-          <p class=" mb-0 py-2">© 2022 Mayurapada CC All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-    <!-- End -->
+  <?php include 'acc/footer.php'; ?>
 
 
     

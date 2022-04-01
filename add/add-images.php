@@ -8,26 +8,30 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="add.css">
-    <title>ADD Mayurapada CC WEB</title>
+
+    <title>ADD Images | Mayurapada CC</title>
   </head>
   <body>
 
     <div class="main">
-        <div class="main-border">
-            <h1 class="welcome">Welcome to Mayurapada.lk Admin Pannel</h1>
-            <div class="main-btns">
-                
-                <a href="add-news.php"><div class="add-news add-btn">
-                    <button type="button" class="btn btn-outline-primary">Add News</button>
-                </div></a>
-                
-                <a href="add-images.php"><div class="add-images add-btn">
-                    <button type="button" class="btn btn-outline-info">Add Images</button>
-                </div></a>
-                <a href=""><div class="news-list add-btn">
-                    <button type="button" class="btn btn-outline-success">News List</button>
-                </div></a>
-            </div>
+        <h1 class="welcome">ADD IMAGES</h1>
+
+        <div class="add-form">
+            <form action="image-data.php"  method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="exampleInputNewsTitle" class="form-label">News ID</label>
+                    <?php if(isset($_COOKIE['news_id'])) { 
+                      $cookie_news_id  = $_COOKIE['news_id'];  
+                      } 
+                    ?>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" maxlength="50" name="news_id" <?php echo 'value ="' . $cookie_news_id . '"' ?>>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputThumbnail" class="form-label">Add Image</label>
+                    <input class="form-control" type="file"  id="formFile" name="image" accept="image/png, image/jpg, image/jpeg">
+                </div>
+                <button type="submit" class="btn btn-primary news-submit">Add Image</button>
+              </form>
         </div>
     </div>
 
