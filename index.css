@@ -1,136 +1,33 @@
-body{
-    background-color: #212529;
-    
-}
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
-img.hero{
+body { 
+    background: url(img/Index\ Bannner\ Blur.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+  }
+
+footer.bg-dark{
+    position: absolute;
+    bottom: 0px;
     width: 100%;
-
 }
 
-/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-                Dekma Mehewara
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-
-div.dekma-mehewara{
-    display: flex;
-    justify-content: center;
-    margin-top: -50px;
-    flex-wrap: wrap;
-    min-width: 350px;
-}
-
-/* div.dekma {
-    width: 400px;
-    height: 300px;
-    background-color: white;
-    margin: 0px 40px 0px 40px;
-}
-
-div.mehewara{
-    width: 400px;
-    height: 300px;
-    background-color: white;
-    margin: 0px 40px 0px 40px;
-} */
-
-div.dekma , div.mehewara {
-    width: 400px;
-    height: 300px;
-    background-color: white;
-    margin: 0px 40px 0px 40px;
-
-
-    box-shadow: 20px 20px 20px rgba(1, 1, 1, 0.6);
-    border-radius: 10px;
-    transition-duration: 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+div.home-main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    /* outline:  2px solid red; */
     text-align: center;
-    flex-direction: column;
-    /* border: 5px solid rgb(148, 148, 148); */
-}
-
-div.dekma:hover , div.mehewara:hover {
-    box-shadow: 20px 20px 40px rgba(1, 1, 1, 0.6);
-    border-radius: 10px;
-    transform: scale(1.1);
-}
-
-h1.dekma-title{
-    font-weight: 800;
-    margin-bottom: 10px;
-    font-size: 3.5rem;
-}
-
-h1.dekma-text{
-    font-size: 2rem;
-}
-
-@media screen and (max-width: 960px){
-    div.dekma , div.mehewara {
-        width: 350px;
-        height: 250px;
-        background-color: white;
-        margin: 0px 40px 0px 40px;
-
-
-        box-shadow: 20px 20px 20px rgba(1, 1, 1, 0.6);
-        border-radius: 10px;
-        transition-duration: 0.5s;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-        /* border: 5px solid rgb(148, 148, 148); */
-    }
-
-    h1.dekma-title{
-        font-weight: 800;
-        margin-bottom: 10px;
-        font-size: 3.3rem;
-    }
-    
-    h1.dekma-text{
-        font-size: 1.7rem;
-    }
-}
-
-/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-                LMS
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-div.mayura-lms{
-    width: 100%;
-    height: 500px;
-    background-color: rgb(22, 22, 22);
-    margin-top: 50px;
-}
-
-div.mayura-lms{
-    display: flex;
-}
-
-img.lms-img{
-    width: 500px;
-    border: 3px solid white;
-    padding: 10px;
-}
-
-div.lms-img{
-    /* outline: 2px solid red; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* padding: 0px 60px 0px 60px; */
-    width: 40%;
-    
-}
-
-h1.lms-title{
     color: white;
-    font-weight: 600;
+    font-weight: 900;
+    text-shadow: 10px 10px 10px rgba(1, 1, 1, 0.9);
+}
+
+h1.welcome{
+    font-family: 'Fredoka One', cursive;
+
 }

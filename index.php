@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
     <link rel="stylesheet" href="styles/image-effect/fluid-gallery.css">
     <!-- My CSS -->
+    <?php include 'styles/!main.style.php'; ?>
     <link rel="stylesheet" href="index.css">
 
     <title>Mayurapada CC - Mayurapada Central College Official Website </title>
@@ -39,34 +40,20 @@
         <?php include 'acc/header.php'; ?>
 
 <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-            hero Image
+            Contents
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
-      <img src="img/test.jpg" alt="" class="hero">
 
-      <div class="dekma-mehewara">
-        <div class="dekma">
-          <h1 class="dekma-title">අපගේ දැක්ම</h1>
-          <h1 class="dekma-text">විද්‍යා දදාති විනයං</h1> <br>
-        </div>
-        <div class="mehewara">
-          <h1 class="dekma-title">අපගේ මෙහෙවර</h1>
-          <h1 class="dekma-text">ප්‍රශස්ත අද්‍යාපනයක් තුලින් විශිෂ්ට දරුවෙක්</h1>
-        </div>
+      <div class="home-main">
+        <h1 class="welcome">Welcome To</h1>
+        <h1 class="school-name">Mayurapada Central College</h1>
+        <h1 class="city">Narammala</h1>
+        <p class="school-text">Now you are looking at Mayurapada Central College Narammala official website. <br> 
+                              In this, you can find much more details about our school </p>
+        <p class="thanks">Thanks for visiting us.</p>
       </div>
 
-<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-            LMS
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->   
+  
 
-      <div class="mayura-lms">
-        <div class="lms-img">
-          <img src="img/lms-img.jpg" alt="" class="lms-img">
-        </div>
-        <div class="lms-text">
-          <h1 class="lms-title">Mayurapada LMS</h1>
-          <h1 class="lms-tag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas tempora laborum fuga non iure voluptatem temporibus aut, magni laudantium illo rerum eaque exercitationem. Placeat odit aliquid similique in accusantium quasi iure! Magni dolorum, omnis libero recusandae voluptate corrupti impedit expedita veritatis tenetur, doloribus obcaecati cupiditate, accusantium odit eos labore ratione!</h1>
-        </div>
-      </div>
 
 <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
             Footer
