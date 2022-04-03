@@ -11,7 +11,7 @@
                 Mayura Life
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Past Pupials Association</a>
+                  <a class="dropdown-item" href="#">Past Pupils Association</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">Academic</a>
               </div>
