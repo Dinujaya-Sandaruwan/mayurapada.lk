@@ -27,8 +27,8 @@
     <link rel="stylesheet" href="styles/image-effect/fluid-gallery.css">
     <!-- My CSS -->
     <?php include 'styles/!main.style.php'; ?>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="index-media.css">
+    <!-- <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index-media.css"> -->
 
     <title>Mayurapada CC - Mayurapada Central College Official Website </title>
   </head>

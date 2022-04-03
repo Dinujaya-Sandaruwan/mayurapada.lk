@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "mayurapada.lk";
+$servername = "173.254.104.205";
+$username = "mayurapa_ict_crew";
+$password = "n#aqrNN%(}sx";
+$dbname = "mayurapa_mayurapada.lk";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
