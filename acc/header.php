@@ -11,9 +11,9 @@
                 Mayura Life
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Past Pupils Association</a>
+                  <a class="dropdown-item" href="ppa.php">Past Pupils Association</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Academic</a>
+                  <a class="dropdown-item" href="academic.php">Academic</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -21,11 +21,11 @@
                 Administration
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Principal</a>
+                  <a class="dropdown-item" href="principal.php">Principal</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Teachers</a>
+                  <a class="dropdown-item" href="teachers.php">Teachers</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Prefects</a>
+                  <a class="dropdown-item" href="prefects.php">Prefects</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -35,7 +35,7 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="all-news.php">News</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Gallery</a>
+                  <a class="dropdown-item" href="gallery.php">Gallery</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -43,13 +43,13 @@
                 About US
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">About mayurapada.lk</a>
+                  <a class="dropdown-item" href="about-website.php">About mayurapada.lk</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">About School</a>
+                  <a class="dropdown-item" href="about-school.php">About School</a>
               </div>
             </li>
             <li class="nav-item active">
-            <a class="nav-link" href="#">Contact US <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="contact.php">Contact US <span class="sr-only">(current)</span></a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">

@@ -93,30 +93,6 @@
                     echo "0 results";
                   }      
               ?>
-
-            <?php
-              include 'dbcon.php';
-                  $sql = "SELECT * FROM `news`;";
-                  // echo"$news_id";
-                  $result = $conn->query($sql);
-                  if ($result->num_rows > 0) {
-                    // output data of each row
-                    while($row = $result->fetch_assoc()) {
-                      echo'<!-- One Card -->';
-                      echo'<div class="card">';
-                      echo'  <img src="add/' . $row['news_thumb'] . '" class="card-img-top" alt="...">';
-                      echo'  <div class="card-body">';
-                      echo'    <h5 class="card-title">' . $row['news_title'] . '</h5>';
-                      $short_iag = substr($row['news_tag'], 0, 70);
-                      echo'    <p class="card-text">'. $short_iag .' ....</p>';
-                      echo'    <a href="one-news.php?news_id='. $row['news_id'] . '" class="btn btn-primary">View More</a>';
-                      echo'  </div>';
-                      echo'</div> ';
-                    }
-                  } else {
-                    echo "0 results";
-                  }      
-              ?>
         </div>
         </div>
 

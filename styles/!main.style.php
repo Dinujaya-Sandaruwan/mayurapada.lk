@@ -14,4 +14,4 @@
 <link rel="stylesheet" href="styles/pages/all-news.css">
 <link rel="stylesheet" href="styles/pages/one-news.css">
 <link rel="stylesheet" href="styles/pages/index.css">
-<link rel="stylesheet" href="styles/pages/media.css">
+<link rel="stylesheet" href="styles/pages/index-media.css">

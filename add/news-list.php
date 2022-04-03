@@ -8,26 +8,41 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="add.css">
-    <title>ADD Mayurapada CC WEB</title>
+
+    <title>News List | Mayurapada CC</title>
   </head>
   <body>
+    <div class="add-main">
+        <h1 class="welcome">NEWS TABLE</h1>
+        <div class="table">
+        <table class="table table-striped table-dark">
+            <thead>
+                <tr>
+                <th scope="col">News ID</th>
+                <th scope="col">News Title</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php   
+                    include '../dbcon.php';           
+                    $sql = "SELECT * FROM `news_list`";
+                    $result = $conn->query($sql);
 
-    <div class="main">
-        <div class="main-border">
-            <h1 class="welcome">Welcome to Mayurapada.lk Admin Pannel</h1>
-            <div class="main-btns">
-                
-                <a href="add-news.php"><div class="add-news add-btn">
-                    <button type="button" class="btn btn-outline-primary">Add News</button>
-                </div></a>
-                
-                <a href="add-images.php"><div class="add-images add-btn">
-                    <button type="button" class="btn btn-outline-info">Add Images</button>
-                </div></a>
-                <a href="news-list.php"><div class="news-list add-btn">
-                    <button type="button" class="btn btn-outline-success">News List</button>
-                </div></a>
-            </div>
+                    if ($result->num_rows > 0) {
+                    // output data of each row
+                    while($row = $result->fetch_assoc()) {
+                        echo'<tr>';
+                        echo'    <th scope="row">' . $row["news_id"] . '</th>';
+                        echo'    <td>' . $row["news_title"] . '</td>';
+                        echo'</tr>';
+                    }
+                    } else {
+                    echo "0 results";
+                    }
+                ?>
+
+            </tbody>
+        </table>
         </div>
     </div>
 
