@@ -28,6 +28,7 @@
     <!-- My CSS -->
     <?php include 'styles/!main.style.php'; ?>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index-media.css">
 
     <title>Mayurapada CC - Mayurapada Central College Official Website </title>
   </head>
@@ -40,19 +41,129 @@
         <?php include 'acc/header.php'; ?>
 
 <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-            Contents
+            Hero Image
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 
-      <div class="home-main">
-        <h1 class="welcome">Welcome To</h1>
-        <h1 class="school-name">Mayurapada Central College</h1>
-        <h1 class="city">Narammala</h1>
-        <p class="school-text">Now you are looking at Mayurapada Central College Narammala official website. <br> 
-                              In this, you can find much more details about our school </p>
-        <p class="thanks">Thanks for visiting us.</p>
+      <div class="home-hero">
+        <img src="img/hero.jpg" alt="" class="hero-image">
+        <h1 class="main-title fade-up">Mayurapada Central College <br> Narammala</h1>
       </div>
 
-  
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+            Dekma - Mehewara
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+        <div class="dekma-mehewara">
+          <div class="dekma">
+            <h1 class="dekma">අපගේ දැක්ම</h1>
+            <p class="dekma">විද්‍යා දදාති විනයං</p>
+          </div>
+          <div class="mehewara">
+            <h1 class="mehewara">අපගේ මෙහෙවර</h1>
+            <p class="mehewara">ප්‍රශස්ථ අධ්‍යාපනයක් තුලින් විශිෂ්ඨ දරුවෙක්</p>
+          </div>
+        </div>
+
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+            Sample News
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->   
+        <div class="sample-news-all">
+          <h1 class="sample-news-title">Latest News</h1>
+          <div class="sample-news">
+          <?php
+              include 'dbcon.php';
+                  $sql = "SELECT * FROM `news` LIMIT 4;";
+                  // echo"$news_id";
+                  $result = $conn->query($sql);
+                  if ($result->num_rows > 0) {
+                    // output data of each row
+                    while($row = $result->fetch_assoc()) {
+                      echo'<!-- One Card -->';
+                      echo'<div class="card">';
+                      echo'  <img src="add/' . $row['news_thumb'] . '" class="card-img-top" alt="...">';
+                      echo'  <div class="card-body">';
+                      echo'    <h5 class="card-title">' . $row['news_title'] . '</h5>';
+                      $short_iag = substr($row['news_tag'], 0, 70);
+                      echo'    <p class="card-text">'. $short_iag .' ....</p>';
+                      echo'    <a href="one-news.php?news_id='. $row['news_id'] . '" class="btn btn-primary">View More</a>';
+                      echo'  </div>';
+                      echo'</div> ';
+                    }
+                  } else {
+                    echo "0 results";
+                  }      
+              ?>
+
+            <?php
+              include 'dbcon.php';
+                  $sql = "SELECT * FROM `news`;";
+                  // echo"$news_id";
+                  $result = $conn->query($sql);
+                  if ($result->num_rows > 0) {
+                    // output data of each row
+                    while($row = $result->fetch_assoc()) {
+                      echo'<!-- One Card -->';
+                      echo'<div class="card">';
+                      echo'  <img src="add/' . $row['news_thumb'] . '" class="card-img-top" alt="...">';
+                      echo'  <div class="card-body">';
+                      echo'    <h5 class="card-title">' . $row['news_title'] . '</h5>';
+                      $short_iag = substr($row['news_tag'], 0, 70);
+                      echo'    <p class="card-text">'. $short_iag .' ....</p>';
+                      echo'    <a href="one-news.php?news_id='. $row['news_id'] . '" class="btn btn-primary">View More</a>';
+                      echo'  </div>';
+                      echo'</div> ';
+                    }
+                  } else {
+                    echo "0 results";
+                  }      
+              ?>
+        </div>
+        </div>
+
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+            News Latter
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+        <div class="news-letter">
+          <!-- <h1 class="news-letter-title"> Welcome to Our Newsletter</h1> -->
+            <form class="news-letter-form" action="">
+              <input type="text" class="news-letter-input" placeholder="Welcome to Our Newsletter">
+              <button class="news-letter-submit">Submit</button>
+            </form>
+        </div>
+
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+            Sample Gallery
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+        <div class="memories">
+          <h1 class="memory-title">Latest Memories</h1>
+          <div class="memory-images">
+          <div class="tz-gallery">
+
+            <div class="row">
+              <?php
+                $get_images = "SELECT * FROM `images` LIMIT 8 ;";
+                // echo"$news_id";
+                $images = $conn->query($get_images);
+                if ($images->num_rows > 0) {
+                  // output data of each row
+                  while($row = $images->fetch_assoc()) {
+                    echo '<div class="col-sm-8 col-md-3">';
+                    echo '    <a class="lightbox" href="add/' . $row["image_url"] . '">';
+                    echo '        <img src="add/' . $row["image_url"] . '" alt="Bridge">';
+                    echo '    </a>';
+                    echo '</div>';
+                  }
+                } else {
+                  echo "0 results";
+                }      
+              ?>
+            </div>
+
+            </div>
+          </div>
+        </div>
 
 
 <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
