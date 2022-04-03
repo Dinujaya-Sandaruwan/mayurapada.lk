@@ -24,9 +24,10 @@
 
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
-    <link rel="stylesheet" href="styles/image-effect/fluid-gallery.css">
+    
     <!-- My CSS -->
     <?php include 'styles/!main.style.php'; ?>
+    
 
     <title>Mayurapada CC - Mayurapada Central College Official Website </title>
   </head>
