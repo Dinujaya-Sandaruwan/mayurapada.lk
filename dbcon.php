@@ -19,7 +19,5 @@ if (mysqli_connect_errno()) {
 //   $sql = "INSERT INTO `test`(`title`, `tag`, `thumb`, `date`, `images`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]')";
 //   $conn->query($sql);
 
-$saman ="123";
-
 ?>
 
