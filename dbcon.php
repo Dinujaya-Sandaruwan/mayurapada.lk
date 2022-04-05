@@ -1,13 +1,13 @@
 <?php
-$servername = "173.254.104.205";
-$username = "mayurapa_ict_crew";
-$password = "n#aqrNN%(}sx";
-$dbname = "mayurapa_mayurapada.lk";
+// $servername = "173.254.104.205";
+// $username = "mayurapa_ict_crew";
+// $password = "n#aqrNN%(}sx";
+// $dbname = "mayurapa_mayurapada.lk";
 
-// $servername = "localhost";
-// $username = "root";
-// $password = "";
-// $dbname = "mayurapada.lk";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "mayurapada.lk";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -19,6 +19,7 @@ if (mysqli_connect_errno()) {
 //   $sql = "INSERT INTO `test`(`title`, `tag`, `thumb`, `date`, `images`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]')";
 //   $conn->query($sql);
 
+$saman ="123";
 
 ?>
 
