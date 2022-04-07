@@ -1,0 +1,27 @@
+h2.massage-title {
+    color: #fefefe;
+    padding-left: 65px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+div.prin-img {
+    padding-top: 5px;
+    padding-bottom: 40px;
+}
+
+
+/*=============================text==========================*/
+
+div.prin-con-text {
+    padding-left: 67px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: #fefefe;
+}
+
+p.text-2 {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}

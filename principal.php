@@ -15,7 +15,14 @@
     <!-- My CSS -->
     <?php include 'styles/!main.style.php'; ?>
     <link rel="stylesheet" href="styles/pages/principal.css">
-    
+
+    <!-----------------google font-------------------------------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+<!----------------------------------------------------------------------------------------------------->
+
     <title> Principal | Mayurapada CC</title>
   </head>
   <body>
@@ -37,6 +44,36 @@
                 Principal
             </h1>
         </div>
+
+
+<!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+            Content                                                                                                           
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->
+
+<div class="prin-con-1">
+  <h2 class="massage-title">Massage from the present principal</h2>
+
+  <div class="prin-img">
+    <center>
+   <img src="img/principal-1.png" alt="principal..">
+   </center>
+  </div>
+
+  <!---------------------------------Text--------------------------------------------->
+<div class="prin-con-text">
+  <p class="text-1"><b> Welcome to the website of mayurapada.</b></p>
+  <br><br>
+  <p class="text-2">
+    dgtv nhjgd jngfjngfb njuytgv 
+  </p>
+
+
+</div>
+
+  <!------------------------------------------------------------------------------------>
+</div>
+
+<!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::--->
 
 
 <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
