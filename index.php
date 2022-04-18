@@ -27,8 +27,8 @@
     <link rel="stylesheet" href="styles/image-effect/fluid-gallery.css">
     <!-- My CSS -->
     <?php include 'styles/!main.style.php'; ?>
-    <!-- <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="index-media.css"> -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index-media.css">
 
     <title>Mayurapada CC - Mayurapada Central College Official Website </title>
   </head>
@@ -46,7 +46,7 @@
 
       <div class="home-hero">
         <img src="img/hero.jpg" alt="" class="hero-image">
-        <h1 class="main-title fade-up">Mayurapada Central College <br> Narammala</h1>
+        <h1 class="main-title fade-up">MAYURAPADA CENTRAL COLLEGE <br> NARAMMALA</h1>
       </div>
 
 <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -55,12 +55,12 @@
 
         <div class="dekma-mehewara">
           <div class="dekma">
-            <h1 class="dekma">අපගේ දැක්ම</h1>
-            <p class="dekma">විද්‍යා දදාති විනයං</p>
+            <h1 class="dekma">Our Vision</h1>
+            <p class="dekma">Vidya Dadathi Vinayan</p>
           </div>
           <div class="mehewara">
-            <h1 class="mehewara">අපගේ මෙහෙවර</h1>
-            <p class="mehewara">ප්‍රශස්ථ අධ්‍යාපනයක් තුලින් විශිෂ්ඨ දරුවෙක්</p>
+            <h1 class="mehewara">Our Mission</h1>
+            <p class="mehewara">A great child with an optimal education</p>
           </div>
         </div>
 

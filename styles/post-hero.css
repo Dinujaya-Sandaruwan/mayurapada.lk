@@ -10,9 +10,6 @@ h1.post-hero-title{
     font-weight: 700;
     font-size: 6rem;
     text-align: center;
-
-    /* outline: 2px solid red; */
-
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;

@@ -1,8 +1,15 @@
 <?php
+// <<<<<<< Updated upstream
  $servername = "173.254.104.205";
  $username = "mayurapa_ict_crew";
  $password = "n#aqrNN%(}sx";
  $dbname = "mayurapa_mayurapada.lk";
+// =======
+$servername = "173.254.104.205";
+$username = "mayurapa_ict_crew";
+$password = "n#aqrNN%(}sx";
+$dbname = "mayurapa_mayurapada.lk";
+// >>>>>>> Stashed changes
 
 // $servername = "localhost";
 // $username = "root";
