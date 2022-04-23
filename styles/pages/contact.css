@@ -1,0 +1,155 @@
+body{
+    color: white;
+}
+
+div.about-main{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 50px;
+    /* outline: 3px solid red; */
+    padding-bottom: 50px;
+}
+
+h1.about-tagline{
+    font-size: 1.3rem;
+    margin-top: 20px;
+    font-weight: 100;
+}
+
+h1.about-title{
+    font-weight: 100;
+    text-align: center;  
+    letter-spacing: 5px; 
+    font-size: 2rem; 
+}
+
+div.about-contact{
+    background:url(https://raw.githubusercontent.com/Dinujaya-Test/test-repo/main/Index%20Bannner%20Blur.jpg);
+    background-size:cover;
+    background-position:center center;
+    background-attachment:fixed;
+    /* height: 500px; */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+div.about-content-left{
+    /* outline: 3px solid red; */
+    padding: 50px;
+    width: 50%;
+    min-width: 350px;
+}
+
+div.about-content-right{
+    /* outline: 3px solid red; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 50%;
+    min-width: 350px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe.google-map{
+    width: 80%;
+    height: 400px;
+    /* border-radius: 10px; */
+    border: 20px solid white;
+    /* filter: hue-rotate(90deg); */
+
+}
+
+hr.about-white-line{
+    height: 10px;
+    background-color: #fff;
+    opacity: 100%;
+}
+
+p.about-school-address{
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    text-shadow: 5px 5px 5px black;
+}
+h1.about-school-name{
+    text-shadow: 5px 5px 5px black;
+}
+
+@media only screen and (max-width: 440px) {
+    h1.about-tagline{
+        font-size: 1rem;
+        margin-top: 20px;
+        font-weight: 100;
+    }
+
+    p.about-school-address{
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+    h1.about-title{
+        font-weight: 700px;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    h1.about-school-name{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    div.about-content-left{
+        width: 100%;
+    }
+    
+    div.about-content-right{
+        width: 100%;
+    }
+}
+
+div.news-comments {
+    width: 60%;
+    /* outline: 2px solid red; */
+    margin: auto;
+    margin-bottom: 20px;
+    border: 3px solid white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button.comments-submit{
+    width: 100%;
+}
+
+label.comments-label{
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1072px){
+    div.news-comments {
+        width: 70%;
+ 
+    }
+}
+
+@media screen and (max-width: 975px){
+    div.news-comments {
+        width: 80%;
+
+    }
+}
+
+@media screen and (max-width: 491px){
+    div.news-comments {
+        width: 90%;
+
+    }
+}
+
+div.contact-form{
+    margin-top: 50px;
+}

@@ -40,6 +40,55 @@
 
 
 <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+            Content
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+        <div class="about-main">
+          <div class="about-title">
+            <!-- <h1 class="about-title">LET'S CONTACT MAYURAPADA CC</h1> -->
+          </div>
+        </div>
+
+        <div class="about-contact">
+            <div class="about-content-left">
+              <h1 class="about-school-name">Mayurapada Central College Narammala</h1>
+              <hr class="about-white-line">
+              <p class="about-school-address">
+              Address :-<br>
+              &nbsp Mayurapada Central college,<br>
+              &nbsp Narammala.<br>
+              <br>
+              Phone No :-<br>
+              &nbsp +94 372 249 228<br>
+              </p>
+              <hr class="about-white-line">
+            </div>
+            <div class="about-content-right">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.3379808745212!2d80.20925041552599!3d7.427799314048647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3246d689aa1a9%3A0x9ed6541db36b3c91!2sMayurapada%20Central%20College!5e0!3m2!1sen!2sus!4v1650699559695!5m2!1sen!2sus" class="google-map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div class="contact-form">
+          <div class="news-comments">
+            <form action= "contact-data.php" method="post">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label comments-label">Name</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label comments-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+              </div>
+              <div class="mb-3">
+                <label for="Comment" class="comments-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="comment"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary comments-submit">Submit</button>
+            </form>
+          </div>
+        </div>
+
+
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
             Footer
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 

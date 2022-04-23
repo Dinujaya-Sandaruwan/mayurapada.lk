@@ -55,8 +55,11 @@
               <hr class="about-white-line">
               <p class="about-school-address">
               Address :-<br>
-              Mayurapada Central college,<br>
-              Narammala.<br>
+              &nbsp Mayurapada Central college,<br>
+              &nbsp Narammala.<br>
+              <br>
+              Phone No :-<br>
+              &nbsp +94 372 249 228<br>
               </p>
               <hr class="about-white-line">
             </div>
@@ -64,6 +67,59 @@
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.3379808745212!2d80.20925041552599!3d7.427799314048647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3246d689aa1a9%3A0x9ed6541db36b3c91!2sMayurapada%20Central%20College!5e0!3m2!1sen!2sus!4v1650699559695!5m2!1sen!2sus" class="google-map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
+
+        <div class="school-accets">
+            <hr class="assect-spliter">
+            <hr class="assect-spliter">
+            <div class="about-school-badge">
+              <h1 class="college-crest">COLLEGE CREST</h1>
+              <hr class="college-crest">
+              <div class="college-crest-hold">
+                <img src="img/crest.png" alt="" class="college-crest">
+              </div>
+            </div>
+
+            <hr class="assect-spliter">
+            <hr class="assect-spliter">
+
+            <div class="about-school-badge">
+              <h1 class="college-crest">COLLEGE FLAG</h1>
+              <hr class="college-crest">
+              <div class="college-flag-hold">
+                <div class="collge-flag-png">
+                  <img src="img/flag.jpg" alt="" class="college-flag-png">
+                  <h1 class="flag-title">JPG IMAGE</h1>
+                </div>
+                <div class="collge-flag-gif">
+                  <img src="img/flag-gif.gif" alt="" class="college-flag-gif">
+                  <h1 class="flag-title">GIF IMAGE</h1>
+                </div>
+              </div>
+            </div>
+
+            <hr class="assect-spliter">
+            <hr class="assect-spliter">
+
+            <div class="about-school-badge">
+              <h1 class="college-crest">COLLEGE SONGS</h1>
+              <hr class="college-crest">
+              <div class="college-flag-hold">
+                <div class="collge-flag-png">
+                <iframe class="about-song" width="90%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/840160684"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/dinujayasandaruwan" title="Mayurapada Central College" target="_blank" style="color: #cccccc; text-decoration: none;">Mayurapada Central College</a> · <a href="https://soundcloud.com/dinujayasandaruwan/narammala-mayurapada-school-anthem" title="Narammala Mayurapada School Anthem" target="_blank" style="color: #cccccc; text-decoration: none;">Narammala Mayurapada School Anthem</a></div>
+                <iframe class="about-song" width="90%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/840179512"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/dinujayasandaruwan" title="Mayurapada Central College" target="_blank" style="color: #cccccc; text-decoration: none;">Mayurapada Central College</a> · <a href="https://soundcloud.com/dinujayasandaruwan/5yohmaf7kjxp" title="මයුරපාදයයි නාරම්මල" target="_blank" style="color: #cccccc; text-decoration: none;">මයුරපාදයයි නාරම්මල</a></div>
+                <iframe class="about-song" width="90%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/840166054"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/dinujayasandaruwan" title="Mayurapada Central College" target="_blank" style="color: #cccccc; text-decoration: none;">Mayurapada Central College</a> · <a href="https://soundcloud.com/dinujayasandaruwan/5dniopbxbajw" title="සත්සර හඩින් ලොව මවිත කරවූ" target="_blank" style="color: #cccccc; text-decoration: none;">සත්සර හඩින් ලොව මවිත කරවූ</a></div>
+                </div>
+                <div class="collge-flag-gif">
+                <iframe class="about-song" width="90%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/840180751"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/dinujayasandaruwan" title="Mayurapada Central College" target="_blank" style="color: #cccccc; text-decoration: none;">Mayurapada Central College</a> · <a href="https://soundcloud.com/dinujayasandaruwan/e1nbhoqhjkwi" title="සක් හඩින් සිහ නදින්" target="_blank" style="color: #cccccc; text-decoration: none;">සක් හඩින් සිහ නදින්</a></div>
+                <iframe class="about-song" width="90%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/840181936"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/dinujayasandaruwan" title="Mayurapada Central College" target="_blank" style="color: #cccccc; text-decoration: none;">Mayurapada Central College</a> · <a href="https://soundcloud.com/dinujayasandaruwan/2019-sportmeet-song" title="ස්වර්ණ කිරැලට - 2019 Sportmeet Song" target="_blank" style="color: #cccccc; text-decoration: none;">ස්වර්ණ කිරැලට - 2019 Sportmeet Song</a></div>
+
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+
 
 
 <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

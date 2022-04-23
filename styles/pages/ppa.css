@@ -1,0 +1,16 @@
+body{
+    color: #fff;
+}
+div.ppa-cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+div.ppa-content{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}

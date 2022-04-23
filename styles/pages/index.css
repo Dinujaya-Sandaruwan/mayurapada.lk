@@ -129,10 +129,10 @@ div.news-letter{
     display: none;
 }
 
-form.news-letter-form{
-    /* outline: 2px solid red; */
-    /* width: 100%; */
-}
+/* form.news-letter-form{
+    outline: 2px solid red;
+    width: 100%;
+} */
 
 input.news-letter-input{
     width: 600px;
