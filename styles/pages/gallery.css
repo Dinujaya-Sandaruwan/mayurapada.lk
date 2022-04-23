@@ -1,0 +1,23 @@
+body{
+    color: #fff;
+}
+
+h1.gallery-title{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+div.tz-gallery{
+    margin-top: -50px;
+}
+
+@media only screen and (max-width: 440px) {
+    h1.gallery-title{
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+}

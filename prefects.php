@@ -40,6 +40,59 @@
 
 
 <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+            Content
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+        <div class="prefect-main">
+          <h1 class="prefect-title">PREFECTS’ COUNCIL</h1>
+          <div class="head-prefects">
+            <div class="prefect-one-card">
+              <img src="img/prefect-img.png" alt="" class="prefect-img">
+              <h1 class="prefect-post">Head Prefect (Boys')</h1>
+              <h1 class="prefect-name">K.A.J.S.Jayasuriya</h1>
+            </div>
+            <div class="prefect-one-card">
+              <img src="img/prefect-img.png" alt="" class="prefect-img">
+              <h1 class="prefect-post">Head Prefect (Girls')</h1>
+              <h1 class="prefect-name">K.V.S.Gomaz</h1>
+            </div>
+          </div>
+
+          <div class="dputy-prefects">
+            <div class="dputy-prefect-one-card">
+              <img src="img/prefect-img.png" alt="" class="prefect-img">
+              <h1 class="prefect-post">Deputy Head Prefect (Boys')</h1>
+              <h1 class="prefect-name">T.P.D.M.Thilakarathna</h1>
+            </div>
+            <div class="dputy-prefect-one-card">
+              <img src="img/prefect-img.png" alt="" class="prefect-img">
+              <h1 class="prefect-post">Deputy Head Prefect (Boys')</h1>
+              <h1 class="prefect-name">A.M.A.S.Amarasingha</h1>
+            </div>
+            <div class="dputy-prefect-one-card">
+              <img src="img/prefect-img.png" alt="" class="prefect-img">
+              <h1 class="prefect-post">Deputy Head Prefect (Boys')</h1>
+              <h1 class="prefect-name">P.V.S.L.Franandu</h1>
+            </div>
+            <div class="dputy-prefect-one-card">
+              <img src="img/prefect-img.png" alt="" class="prefect-img">
+              <h1 class="prefect-post">Deputy Head Prefect (Girls')</h1>
+              <h1 class="prefect-name">R.M.H.K.Ranasingha</h1>
+            </div>
+            <div class="dputy-prefect-one-card">
+              <img src="img/prefect-img.png" alt="" class="prefect-img">
+              <h1 class="prefect-post">Deputy Head Prefect (Girls')</h1>
+              <h1 class="prefect-name">P.V.S.L.Franandu</h1>
+            </div>
+            <div class="dputy-prefect-one-card">
+              <img src="img/prefect-img.png" alt="" class="prefect-img">
+              <h1 class="prefect-post">Deputy Head Prefect (Girls')</h1>
+              <h1 class="prefect-name">R.M.H.K.Ranasingha</h1>
+            </div>
+          </div>
+        </div>
+        
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
             Footer
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 

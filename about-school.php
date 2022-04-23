@@ -38,6 +38,33 @@
             </h1>
         </div>
 
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+            Content
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+        <div class="about-main">
+          <div class="about-title">
+            <h1 class="about-title">MAYURAPADA CENTRAL COLLEGE</h1>
+            <h1 class="about-tagline">Mayurapada Central College was started in 1944 as one of the Central Colleges that were created during the decade of 1940 according to the concept of the pioneer, Dr. C. W. W. Kannangara, “The Father of free education” of Sri Lanka.</h1>
+          </div>
+        </div>
+
+        <div class="about-contact">
+            <div class="about-content-left">
+              <h1 class="about-school-name">Mayurapada Central College Narammala</h1>
+              <hr class="about-white-line">
+              <p class="about-school-address">
+              Address :-<br>
+              Mayurapada Central college,<br>
+              Narammala.<br>
+              </p>
+              <hr class="about-white-line">
+            </div>
+            <div class="about-content-right">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.3379808745212!2d80.20925041552599!3d7.427799314048647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3246d689aa1a9%3A0x9ed6541db36b3c91!2sMayurapada%20Central%20College!5e0!3m2!1sen!2sus!4v1650699559695!5m2!1sen!2sus" class="google-map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
 
 <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
             Footer

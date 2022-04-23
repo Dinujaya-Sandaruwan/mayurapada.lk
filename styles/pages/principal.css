@@ -1,0 +1,40 @@
+body{
+    color: #fff;
+}
+
+h1.pm-title{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 5%;
+    margin-top: 50px;
+}
+
+div.principal-msg{
+    /* margin: 40px, 10%, 50px, 10%; */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+p.p-msg-footer{
+    text-align: right;
+}
+
+span.p-welcome-title{
+    font-size: 1.5rem;
+}
+
+p.principal-msg{
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 440px) {
+    p.principal-msg{
+        font-size: 0.7rem;
+    }
+    h1.pm-title{
+        font-size: 1.5rem;
+    }
+    span.p-welcome-title{
+        font-size: 1rem;
+    }
+}
+
