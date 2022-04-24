@@ -23,7 +23,7 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="principal.php">Principal</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="teachers.php">Teachers</a>
+                  <a class="dropdown-item" href="teachers.php" style="color:red; ">Teachers</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="prefects.php">Prefects</a>
               </div>
@@ -43,9 +43,10 @@
                 About US
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="about-website.php">About mayurapada.lk</a>
-                  <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="about-school.php">About School</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="about-website.php" style="color:red;">About mayurapada.lk</a>
+                  
               </div>
             </li>
             <li class="nav-item active">

@@ -15,6 +15,51 @@
     <!-- My CSS -->
     <?php include 'styles/!main.style.php'; ?>
     <link rel="stylesheet" href="styles/pages/academic.css">
+
+    <style>
+      /* Style the tab */
+      .tab {
+          overflow: hidden;
+          border: 1px solid #ccc;
+          background-color: #f1f1f1;
+          display:flex;
+          justify-content:center;
+          font-family: 'Roboto', sans-serif;;
+          font-weight: 700;
+          flex-wrap: wrap;
+          
+        }
+        
+        /* Style the buttons inside the tab */
+        .tab button {
+          background-color: inherit;
+          /* float: ; */
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 14px 16px;
+          transition: 0.3s;
+          font-size: 17px;
+        }
+        
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+          background-color: #ddd;
+        }
+        
+        /* Create an active/current tablink class */
+        .tab button.active {
+          background-color: #ccc;
+        }
+        
+        /* Style the tab content */
+        .tabcontent {
+          display: none;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-top: none;
+        }
+    </style>
     
     <title> Academic | Mayurapada CC</title>
   </head>
@@ -81,21 +126,101 @@
             </div>
           </div>
           <h1 class="academic-6-9-title">ADVANCE LEVEL SECTIONS & SUBJECTS</h1>
-          <div class="d-flex align-items-start">
-            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
-              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
-              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
-              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+          <div class="streams">
+            <div class="tab">
+              <button class="tablinks" onclick="openCity(event, 'Science')">Science Stream</button>
+              <button class="tablinks" onclick="openCity(event, 'Art')">Art Stream</button>
+              <button class="tablinks" onclick="openCity(event, 'Commerce')">Commerce Stream</button>
+              <button class="tablinks" onclick="openCity(event, 'Technology')">Technology Stream</button>
             </div>
-            <div class="tab-content" id="v-pills-tabContent">
-              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
-              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
-              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+
+            <div id="Science" class="tabcontent">
+              <table class="table table-dark ">
+                <thead>
+                <tbody>
+                  <tr> 
+                    <td class="al-subjects">Physics</td>
+                    <td class="al-subjects">Chemistry</td>
+                    <td class="al-subjects">Biology</td>
+                  </tr>
+                  <tr>
+                    <td lass="al-subjects">Combined Maths</td>
+                    <td lass="al-subjects">Agriculture</td>
+                    <td lass="al-subjects">General English</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div id="Art" class="tabcontent">
+                <table class="table table-dark">
+                  <thead>
+                  <tbody>
+                    <tr> 
+                      <td class="al-subjects">Home Economics</td>
+                      <td class="al-subjects">Logic</td>
+                      <td class="al-subjects">Sinhala</td>
+                    </tr>
+                    <tr>
+                      <td lass="al-subjects">Political Science</td>
+                      <td lass="al-subjects">Dancing</td>
+                      <td lass="al-subjects">History</td>
+                    </tr>
+                    <tr>
+                      <td lass="al-subjects">Geography</td>
+                      <td lass="al-subjects">Music (western / oriental)</td>
+                      <td lass="al-subjects">Art</td>
+                    </tr>
+                    <tr>
+                      <td lass="al-subjects">Japanese</td>
+                      <td lass="al-subjects">Buddhist Civilisation</td>
+                      <td lass="al-subjects">French</td>
+                    </tr>
+                    <tr>
+                      <td lass="al-subjects">English</td>
+                      <td lass="al-subjects">General English</td>
+                      <td lass="al-subjects">Drama & Theatre</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+
+            <div id="Commerce" class="tabcontent">
+                <table class="table table-dark">
+                  <thead>
+                  <tbody>
+                    <tr> 
+                      <td class="al-subjects">Business Studies</td>
+                      <td class="al-subjects">Accounting</td>
+                      <td class="al-subjects">Economics</td>
+                    </tr>
+                    <tr>
+                      <td lass="al-subjects">Business Statistics	</td>
+                      <td lass="al-subjects">ICT</td>
+                      <td lass="al-subjects"> - </td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+            <div id="Technology" class="tabcontent">
+                <table class="table table-dark">
+                  <thead>
+                  <tbody>
+                    <tr> 
+                      <td class="al-subjects">Engineering Technology</td>
+                      <td class="al-subjects">Bio System Technology</td>
+                      <td class="al-subjects">Science</td>
+                    </tr>
+                    <tr>
+                      <td lass="al-subjects">ICT</td>
+                      <td lass="al-subjects">Geography</td>
+                      <td lass="al-subjects">agricultural science</td>
+                    </tr>
+                  </tbody>
+                </table>
             </div>
           </div>
-
+        </div>
 
 <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
             Footer
@@ -119,5 +244,21 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
     -->
+
+      <script>
+          function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+      </script>
   </body>
 </html>
