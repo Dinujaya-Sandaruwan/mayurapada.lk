@@ -1,0 +1,27 @@
+body{
+    color: #fff;
+}
+ul li.subjects::marker {
+    content: "🔘 ";
+}
+
+h1.academic-6-9-title{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;;
+    font-weight: 700;
+}
+
+div.col{
+    min-width: 300px;
+}
+
+@media only screen and (max-width: 440px){
+    h1.academic-6-9-title{
+        font-size: 1rem;
+    }
+    ul li.subjects{
+        font-size: 0.8rem;
+    }
+}
