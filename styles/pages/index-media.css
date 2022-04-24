@@ -214,3 +214,55 @@
         font-size: 1rem;
     }
 }
+
+@media screen and (max-width: 667px){
+    .home-hero , div.dekma-mehewara , .sample-news-all , .news-letter , .memories {
+        display: none;
+    }
+    body { 
+        background: url(https://raw.githubusercontent.com/Dinujaya-Test/test-repo/main/Index%20Bannner%20Blur.jpg) no-repeat center center ; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+    div.mobile-main{
+        height: 80.7vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div.mobile-content{
+        /* outline: 5px solid red; */
+        width: 90%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+        text-shadow: 5px 5px 5px black;
+
+    }
+
+    div.mobile-contact-ico{
+        display: flex;
+        justify-content: space-evenly;
+        width: 50%;
+        margin: auto;
+        /* outline: 2px solid red; */
+    }
+
+    .mobile-contact{
+        text-decoration: none;
+        color: #fff;
+
+    }
+    
+}
+
+@media screen and (min-width: 667px){
+
+    div.mobile-main{
+        display: none;
+    }
+
+}
