@@ -1,3 +1,13 @@
+<?php
+
+$cookie_name = "login";
+
+if(!isset($_COOKIE[$cookie_name])) {
+  header("Location: ../admin");
+}
+
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
