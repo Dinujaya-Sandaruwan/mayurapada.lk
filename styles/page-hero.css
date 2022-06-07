@@ -5,14 +5,10 @@ h1.page-hero-title{
     transform: translate(-50% , -50%);
 
     color: #fff;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 8rem;
-
-    /* outline: 2px solid red; */
-
-    animation: fadeInAnimation ease 2s;
+    animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }

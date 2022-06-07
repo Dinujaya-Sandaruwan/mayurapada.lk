@@ -1,0 +1,98 @@
+    h2.massage-title {
+        color: #fefefe;
+        padding-left: 65px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    div.prin-img {
+        padding-top: 5px;
+        padding-bottom: 40px;
+    }
+    /*=============================text==========================*/
+    
+    div.prin-con-text {
+        padding-left: 67px;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        color: #fefefe;
+    }
+    
+    div.prin-text-2 {
+        padding-bottom: 10px;
+        padding-right: 60px;
+    }
+    
+    p.prin-text-3 {
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    div.prin-text-name {
+        padding-left: 995px;
+    }
+    /*=============================================Responsive codes===========================================*/
+    
+    @media only screen and (max-width: 600px) {
+        div.prin-text-name {
+            padding-left: 5px;
+        }
+        div.prin-con-text {
+            font-size: 10px;
+        }
+        p.prin-text-name-1 {
+            padding-right: 10px;
+        }
+    }
+    
+    @media only screen and (max-width: 440px) {
+        p.prin-text-name-1 {
+            padding-left: 120px;
+        }
+    }
+    
+    @media only screen and (max-width: 880px) {
+        p.prin-text-name-1 {
+            padding-left: 270px;
+        }
+    }
+    
+    @media only screen and (max-width: 915px) {
+        div.prin-text-name {
+            padding-left: 5px;
+        }
+        div.prin-con-text {
+            font-size: 10px;
+        }
+    }
+    
+    @media only screen and (max-width: 1030px) {
+        div.prin-text-name {
+            padding-left: 5px;
+        }
+        div.prin-con-text {
+            font-size: 10px;
+        }
+    }
+    
+    @media only screen and (max-width: 1070px) {
+        div.prin-text-name {
+            padding-left: 5px;
+        }
+    }
+    
+    @media only screen and (max-width: 2300px) {
+        div.prin-text-name {
+            padding-left: 100px;
+        }
+    }
+    
+    @media only screen and (min-width: 1070px) {
+        div.prin-text-name {
+            padding-left: 5px;
+        }
+    }
+    /*::::::::::::::::::::::::::::::::::::::  Oshadha Dewmith Jayakody   :::::::::::::::::::::::::::::::::::::::::::::*/
